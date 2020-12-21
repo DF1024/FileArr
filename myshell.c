@@ -70,7 +70,7 @@ int main() {
 	/* 启动myshell */
 	char argv[BUF_SZ];
 	while (TRUE) {
-		printf("\e[32;1m%s@%s:%s\e[0m$ ", username, hostname,curPath); // 显示为绿色
+		printf("\e[33;1mmysh>%s\e[0m$ ", curPath); // 显示为绿色
 		/* 获取用户输入的命令 */
 		fgets(argv, BUF_SZ, stdin);
 		int len = strlen(argv);
